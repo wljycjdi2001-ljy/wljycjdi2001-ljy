@@ -1,60 +1,67 @@
 <div align="center">
 
-# 이준영 · Junyoung Lee
+<h1>이준영 <sub><sup>Junyoung Lee</sup></sub></h1>
 
-**문서·데이터에 근거해 답하는 AI 서비스를 만듭니다.**<br>
-RAG 검색 · 권한 필터 · 검색 품질 평가 · 데이터 분석 에이전트
+<p><b>근거로 답하는 AI 서비스를 만듭니다.</b><br>
+RAG Search · Access Control · Retrieval Evaluation · Data Agent</p>
 
-[![Email](https://img.shields.io/badge/Email-wljycjdi2001@naver.com-03C75A?style=flat-square&logo=naver&logoColor=white)](mailto:wljycjdi2001@naver.com)
+<a href="mailto:wljycjdi2001@naver.com"><img src="https://img.shields.io/badge/wljycjdi2001@naver.com-111111?style=flat-square&logo=naver&logoColor=white" alt="Email"></a>
 
 </div>
 
----
+<br>
 
-## 🙋 소개
+### About
 
-- 현대 부트캠프 **AI서비스개발과정** 교육 중 — 7인 팀 프로젝트에서 **검색 모듈**을 맡았습니다.
-- "그럴듯한 답"보다 **근거가 있는 답**을 중요하게 생각합니다. 검색 결과는 권한을 DB로 다시 확인하고, 품질은 정답셋과 지표(Hit@k, MRR)로 측정합니다.
-- 확인되지 않은 기능·수치는 README에 쓰지 않습니다. 아래 숫자는 모두 테스트 결과서 기준입니다.
+현대 부트캠프 AI서비스개발과정에서 교육받고 있습니다.<br>
+그럴듯한 답보다 **확인 가능한 답**을 만드는 데 관심이 있습니다 — 권한은 DB로 다시 확인하고, 품질은 정답셋과 지표로 잽니다.
 
-## 📌 대표 프로젝트
+<br>
 
-### 1. 현답(Hyundap) — 다중 기업 AI 문서 검색 플랫폼 · `팀 7명` · 2026.10
-> 회사 문서를 자연어로 묻고, 문서 근거와 함께 답·요약을 받는 사내 검색 서비스
+### Projects
 
-**내 역할: 검색 모듈 `hyundap/search/`** — 질문한 사람이 볼 수 있는 문서만 골라 순위대로 반환
-- **보안:** 허용 회사 범위로 먼저 거르고, 벡터 검색 결과를 DB 기준 8가지 조건(공개·삭제·현재 버전 등)으로 재검증 → 다른 회사 문서·옛 버전 노출 차단
-- **문제 해결:** 문서 코드가 든 질문에서 정답이 6위로 밀리던 문제를, 코드로 검색 범위를 좁혀 해결 ([PR #224](https://github.com/paul8004-lee/Hyundap/pull/224))
-- **품질 측정:** 정답셋 74건 + Hit@3·MRR·회사 간 누출 건수 평가 도구 ([PR #260](https://github.com/paul8004-lee/Hyundap/pull/260))
-- **결과:** 팀 최종 테스트 검색 정확도 Hit@3 **8/10**, 권한 테스트 9개 중 8개 통과
+<table>
+<tr>
+<td width="50%" valign="top">
 
-`Python` `Gradio` `OpenAI Embedding` `Chroma` `MySQL` `LangChain`
-→ [저장소](https://github.com/wljycjdi2001-ljy/Hyundap) · [포트폴리오 상세](https://github.com/wljycjdi2001-ljy/Hyundap/blob/develop/PORTFOLIO_이준영.md)
+**[현답 Hyundap](https://github.com/wljycjdi2001-ljy/Hyundap)**<br>
+<sub>다중 기업 AI 문서 검색 플랫폼 · 팀 7명 · 2026.10</sub>
 
-### 2. 탐나워치(TamnaWatch) — 제주 지역화폐 데이터 분석 AI 에이전트 · `팀 프로젝트` · 2026.11
-> 「제주 AI·빅데이터 활용 AI Agent 개발 챌린지」 출품작
+검색 모듈 담당 — 질문한 사람이 볼 수 있는 문서만 골라 순위대로 반환
 
-- 탐나는전·카드 결제 CSV를 올리면 현황 보고서·이상 급증 구역·예산 소진일을 계산하고 Word 보고서로 출력
-- **AI 에이전트(Gemini):** 대표 질문 8개 도구 선택 8/8, 답변 속 숫자를 계산 결과와 자동 대조
-- **반출 기준 자동 준수:** 10 미만 칸 가림, 외부 AI에는 비율·순위만 전송, 읽기 전용 SQL 잠금
-- 자동 테스트 92개
+- 벡터 검색 결과를 DB 8가지 조건으로 재검증해 타사 문서·옛 버전 차단
+- 문서 코드 질문의 정답 누락 해결 [#224](https://github.com/paul8004-lee/Hyundap/pull/224)
+- 정답셋 74건 · Hit@3 · MRR 평가 도구 [#260](https://github.com/paul8004-lee/Hyundap/pull/260)
+- 최종 테스트 Hit@3 **8/10**, 권한 **8/9** 통과
 
-`Python` `Streamlit` `DuckDB` `pandas` `Plotly` `Gemini`
-→ 🔒 대회 심사 중 비공개 (종료 후 공개 예정)
+<sub>`Python` `Gradio` `OpenAI` `Chroma` `MySQL`</sub><br>
+<sub>→ [포트폴리오 상세](https://github.com/wljycjdi2001-ljy/Hyundap/blob/develop/PORTFOLIO_이준영.md)</sub>
 
-### 3. 소득세법 RAG 챗봇 워크북 · `스터디 6명` · 2026.10
-- 소득세법 PDF를 조문 단위로 분할해 RAG 베이스라인 → 계산봇/법령봇/상담봇 3종으로 확장
-- 기능 브랜치 + PR 리뷰로 협업 (PR 15건)
+</td>
+<td width="50%" valign="top">
 
-`LangChain` `LangGraph` `FAISS` `OpenAI`
-→ [저장소](https://github.com/wljycjdi2001-ljy/multi_rag_chabot_workbook)
+**탐나워치 TamnaWatch** 🔒<br>
+<sub>제주 지역화폐 데이터 분석 AI 에이전트 · 팀 · 2026.11</sub>
 
-## 🛠 기술 스택
+제주 AI Agent 챌린지 출품작 — 결제 데이터를 올리면 반출 가능한 보고서까지
 
-| 분야 | 기술 |
-| --- | --- |
-| Language | Python |
-| AI / RAG | OpenAI API, Gemini API, LangChain, LangGraph, Chroma, FAISS |
-| Data | pandas, DuckDB, MySQL, Plotly, matplotlib |
-| App | Gradio, Streamlit |
-| Test / 협업 | pytest, unittest, Git, GitHub (Issue · PR · Code Review) |
+- 현황 보고서 · 이상 급증 구역 · 예산 소진일 계산 → Word 보고서
+- Gemini 에이전트 도구 선택 **8/8**, 답변 숫자 자동 대조
+- 반출 기준 자동 준수 (소수 셀 가림 · 외부 AI엔 비율만)
+- 자동 테스트 **92개**
+
+<sub>`Python` `Streamlit` `DuckDB` `pandas` `Gemini`</sub><br>
+<sub>→ 대회 심사 중 비공개</sub>
+
+</td>
+</tr>
+</table>
+
+<sub>그 외 — [소득세법 RAG 챗봇 워크북](https://github.com/wljycjdi2001-ljy/multi_rag_chabot_workbook) · [프로그래머스 풀이](https://github.com/wljycjdi2001-ljy/programmers)</sub>
+
+<br>
+
+### Stack
+
+<img src="https://img.shields.io/badge/Python-111111?style=flat-square&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/OpenAI-111111?style=flat-square&logo=openai&logoColor=white"> <img src="https://img.shields.io/badge/Gemini-111111?style=flat-square&logo=googlegemini&logoColor=white"> <img src="https://img.shields.io/badge/LangChain-111111?style=flat-square&logo=langchain&logoColor=white"> <img src="https://img.shields.io/badge/Chroma-111111?style=flat-square&logoColor=white"> <img src="https://img.shields.io/badge/FAISS-111111?style=flat-square&logo=meta&logoColor=white"><br>
+<img src="https://img.shields.io/badge/pandas-111111?style=flat-square&logo=pandas&logoColor=white"> <img src="https://img.shields.io/badge/DuckDB-111111?style=flat-square&logo=duckdb&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-111111?style=flat-square&logo=mysql&logoColor=white"> <img src="https://img.shields.io/badge/Streamlit-111111?style=flat-square&logo=streamlit&logoColor=white"> <img src="https://img.shields.io/badge/Gradio-111111?style=flat-square&logoColor=white"> <img src="https://img.shields.io/badge/pytest-111111?style=flat-square&logo=pytest&logoColor=white"> <img src="https://img.shields.io/badge/Git-111111?style=flat-square&logo=git&logoColor=white">
