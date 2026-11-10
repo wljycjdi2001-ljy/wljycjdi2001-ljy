@@ -57,7 +57,7 @@ RAG Search · Access Control · Retrieval Evaluation · Data Agent</p>
 </tr>
 </table>
 
-<sub>그 외 — [소득세법 RAG 챗봇 워크북](https://github.com/wljycjdi2001-ljy/multi_rag_chabot_workbook) · [프로그래머스 풀이](https://github.com/wljycjdi2001-ljy/programmers)</sub>
+<sub>그 외 — [멀티모달 RAG (PDF 그래프·표까지 검색)](https://github.com/wljycjdi2001-ljy/multimodal-rag) · [소득세법 RAG 챗봇 워크북](https://github.com/wljycjdi2001-ljy/multi_rag_chabot_workbook) · [프로그래머스 풀이](https://github.com/wljycjdi2001-ljy/programmers)</sub>
 
 <br>
 
